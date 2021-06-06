@@ -1,10 +1,3 @@
-@mixin big_title
-    font-size: 36px 
-    font-weight: 600 
-    text-transform: none 
-    letter-spacing: normal 
-    color: #1a1a1a 
-    
 @mixin little_title
     font-family: 'Source Sans Pro' 
     font-size: 14px 
@@ -14,10 +7,22 @@
     letter-spacing: 0.1em 
     color: #008ed6 
     
+@mixin big_title
+    margin-top: 15px
+    text-align: center
+    font-size: 36px 
+    font-weight: 600 
+    text-transform: none 
+    letter-spacing: normal 
+    color: #1a1a1a 
+    
+
+    
 
 
 header
     position: relative
+    background-color: #ffffff3d
     h2 
         font-family: Quicksand
         font-size: 24px
@@ -109,10 +114,46 @@ nav
     height: 705px
     img
         margin-top: 60px
+    h2
+        margin-top: 120px
+        @include little_title
+        text-align: left
+    h3
+        @include big_title
+        text-align: left
+    .text
+        font-size: 18px
+        line-height: 26px
+        font-weight: 400
+        text-transform: none
+        letter-spacing: normal
+        color: #999999
+    ul
+        font-size: 18px
+        line-height: 36px
+        font-weight: 400
+        text-transform: none
+        letter-spacing: normal
+        color: #1b1b1b
+        
 
 .about_short
     height: 543px
     background-color: #f2f2f2 
+    h2
+        margin-top: 132px
+        @include little_title
+        text-align: left
+    h3
+        @include big_title
+        text-align: left
+    .text
+        font-size: 18px
+        line-height: 26px
+        font-weight: 400
+        text-transform: none
+        letter-spacing: normal
+        color: #999999
 
 .recalls
     height: 640px
@@ -126,8 +167,10 @@ nav
     height: 780px
     .col-md-auto
         h2
+            text-align: center
             @include little_title
         h3
+            text-align: center
             @include big_title
 
 .contacts
@@ -135,8 +178,10 @@ nav
     background-color: #e6e3e3
     .col-md-auto
         h2
+            text-align: center
             @include little_title
         h3
+            text-align: center
             @include big_title
         
             
@@ -152,3 +197,10 @@ nav
 footer 
     height: 160px
     background-color: #15141a
+    col-md-auto
+        font-family: 'Source Sans Pro'
+        font-size: 14px
+        line-height: 48px
+        font-weight: 600
+        text-transform: uppercase
+        color: #444348
