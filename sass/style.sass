@@ -54,20 +54,20 @@ nav
 	margin: 0
 	list-style-type: none
 
-&_link
-        margin: 0 12px 0 12px
-		font-family: 'Source Sans Pro'
-        font-size: 16px
-        line-height: 58px
-        font-weight: 600
-        color: #fffefe
+    // &_link
+    //     // margin: 0 12px 0 12px
+	// 	font-family: 'Source Sans Pro'
+    //     font-size: 16px
+    //     line-height: 58px
+    //     font-weight: 600
+    //     color: #fffefe
 
 
 .home
     height: 640px
     background-color: #15141a
     background-image: linear-gradient(135.0deg, rgba(21,20,26,0.4) 19%, rgba(21,20,26,0.0) 80%)
-    background: url('img/home_bg.jpg') center (center / cover) no-repeat
+    background: url('../img/home_bg.jpg') center (center / cover) no-repeat
     h1
         font-family: 'Source Sans Pro' 
         font-size: 14px 
@@ -92,6 +92,14 @@ nav
         color: #999999 
     img
         max-width: 100%
+    button
+        margin-top: 63px
+        width: 160px
+        height: 50px
+        background-color: #008ed6
+        box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)
+            
+    
 
 .text 
     font-size: 18px
@@ -125,16 +133,16 @@ nav
                     background-color: #008ed6  
     .row
         .col-3
-        title
-            font-family: 'Source Sans Pro'
-            font-size: 24px
-            line-height: 20px
-            font-weight: 400
-            color: #1a1a1a
-        .text
-            font-size: 18px 
-            line-height: 26px 
-            color: #999999 
+            .text
+                font-size: 18px 
+                line-height: 26px 
+                color: #999999
+                title
+                    font-family: 'Source Sans Pro'
+                    font-size: 24px
+                    line-height: 20px
+                    font-weight: 400
+                    color: #1a1a1a 
 
 .about_long
     height: 705px
@@ -175,13 +183,13 @@ nav
         letter-spacing: normal
         color: #1b1b1b
         .li1
-            list-style-image: url('icons/cup_icon.png')
+            list-style-image: url('../icons/cup_icon.png')
         .li2
-            list-style-image: url('icons/mouse_icon.png')
+            list-style-image: url('../icons/mouse_icon.png')
         .li3
-            list-style-image: url('icons/lightning_icon.png')
+            list-style-image: url('../icons/lightning_icon.png')
         .li4
-            list-style-image: url('icons/speedometer_icon.png')
+            list-style-image: url('../icons/speedometer_icon.png')
 
 .about_short
     height: 543px
@@ -215,11 +223,30 @@ nav
 
 .recalls
     height: 640px
-    background: url('img/recalls_bg.jpg') center (center / cover) no-repeat
+    background: url('../img/recalls_bg.jpg') center (center / cover) no-repeat
 
 .eye-catcher
+    margin-top: 69px 
     height: 170px
     background-color: #15141a
+    font-weight: 300
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    span
+        font-family: 'Source Sans Pro'
+        font-size: 36px
+        line-height: 48px
+        font-weight: 600
+        color: #ffffff
+.download
+    margin-top: 63px
+    width: 160px
+    height: 50px
+    background-color: #008ed6
+    box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)
+            
+
 
 .plans
     height: 780px
@@ -269,7 +296,7 @@ nav
 .map
     height: 360px
     background-color: #15141a
-    background: url('img/map.jpg') center (center / cover) no-repeat
+    background: url('../img/map.jpg') center (center / cover) no-repeat
 
 footer 
     height: 160px
@@ -283,5 +310,4 @@ footer
         text-transform: uppercase
         color: #444348
         margin-top: 13px
-.krug
     
