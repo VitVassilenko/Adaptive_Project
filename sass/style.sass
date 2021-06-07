@@ -15,15 +15,18 @@
     text-transform: none 
     letter-spacing: normal 
     color: #1a1a1a 
-    
 
-    
 
+// .container
+//     position: relative    
 
 header
-    position: relative
-    background-color: #ffffff3d
+    // position: absolute
+    // top: -80px
+    // background-color: #ffffff3d
+    // z-index: 2
     h2 
+        float: left
         font-family: Quicksand
         font-size: 24px
         line-height: 58px
@@ -32,9 +35,9 @@ header
         color: #ffffff
         span
             opacity: 0.3 
-            font-family: 'Source Sans Pro' 
+            // font-family: 'Source Sans Pro' 
             font-size: 9px 
-            line-height: 10px 
+            line-height: 20px 
             font-weight: 400 
             text-transform: uppercase 
             letter-spacing: 0.14em 
@@ -43,6 +46,7 @@ header
 nav
     display: flex
     justify-content: space-between
+
 .menu
 	display: flex
 	justify-content: space-between
@@ -50,17 +54,16 @@ nav
 	margin: 0
 	list-style-type: none
 
-	&_link
-		font-size: 15px
-		font-weight: 300
-		color: #ffffff
+&_link
+        margin: 0 12px 0 12px
+		font-family: 'Source Sans Pro'
+        font-size: 16px
+        line-height: 58px
+        font-weight: 600
+        color: #fffefe
 
-	&_item
-		border-right: 2px dotted black
-		padding-right: 33px
 
 .home
-    max-width: 1440px
     height: 640px
     background-color: #15141a
     background-image: linear-gradient(135.0deg, rgba(21,20,26,0.4) 19%, rgba(21,20,26,0.0) 80%)
@@ -87,6 +90,9 @@ nav
         text-transform: none 
         letter-spacing: normal 
         color: #999999 
+    img
+        max-width: 100%
+
 .text 
     font-size: 18px
     line-height: 50px
@@ -98,13 +104,33 @@ nav
     height: 575px
     background-color: white
     border-bottom: 1px solid gray 
+    .row justify-content-center
+        .col-auto
+            h2
+                text-align: center
+                @include little_title
+            h3
+                text-align: center
+                @include big_title
+            .line
+                margin: 30px auto
+                margin-bottom: 0
+                width: 42px
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                .line_part
+                    width: 19px
+                    height: 2px
+                    background-color: #008ed6  
     .row
-        h2
-            font-family: 'Source Sans Pro' 
-            font-size: 24px 
-            line-height: 20px 
-            font-weight: 400 
-            color: #1a1a1a 
+        .col-3
+        title
+            font-family: 'Source Sans Pro'
+            font-size: 24px
+            line-height: 20px
+            font-weight: 400
+            color: #1a1a1a
         .text
             font-size: 18px 
             line-height: 26px 
@@ -112,8 +138,10 @@ nav
 
 .about_long
     height: 705px
+    z-index: 1
     img
         margin-top: 60px
+        max-width: 100%
     h2
         margin-top: 120px
         @include little_title
@@ -121,6 +149,16 @@ nav
     h3
         @include big_title
         text-align: left
+    .line
+        margin: 30px 0
+        width: 42px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .line_part
+            width: 19px
+            height: 2px
+            background-color: #008ed6
     .text
         font-size: 18px
         line-height: 26px
@@ -129,13 +167,21 @@ nav
         letter-spacing: normal
         color: #999999
     ul
+        margin-top: 45px
         font-size: 18px
         line-height: 36px
         font-weight: 400
         text-transform: none
         letter-spacing: normal
         color: #1b1b1b
-        
+        .li1
+            list-style-image: url('../icons/cup_icon.png')
+        .li2
+            list-style-image: url('../icons/mouse_icon.png')
+        .li3
+            list-style-image: url('../icons/lightning_icon.png')
+        .li4
+            list-style-image: url('../icons/speedometer_icon.png')
 
 .about_short
     height: 543px
@@ -147,6 +193,16 @@ nav
     h3
         @include big_title
         text-align: left
+    .line
+        margin: 30px 0
+        width: 42px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .line_part
+            width: 19px
+            height: 2px
+            background-color: #008ed6
     .text
         font-size: 18px
         line-height: 26px
@@ -154,6 +210,8 @@ nav
         text-transform: none
         letter-spacing: normal
         color: #999999
+    img
+        max-width: 100%
 
 .recalls
     height: 640px
@@ -165,25 +223,44 @@ nav
 
 .plans
     height: 780px
-    .col-md-auto
+    .col-auto
         h2
             text-align: center
             @include little_title
         h3
             text-align: center
             @include big_title
+        .line
+            margin: 30px auto
+            width: 42px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            .line_part
+                width: 19px
+                height: 2px
+                background-color: #008ed6
 
 .contacts
     height: 722px
     background-color: #e6e3e3
-    .col-md-auto
+    .col-auto
         h2
             text-align: center
             @include little_title
         h3
             text-align: center
             @include big_title
-        
+        .line
+            margin: 30px auto
+            width: 42px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            .line_part
+                width: 19px
+                height: 2px
+                background-color: #008ed6
             
             
             
@@ -197,10 +274,14 @@ nav
 footer 
     height: 160px
     background-color: #15141a
-    col-md-auto
-        font-family: 'Source Sans Pro'
+    img
+        margin: 0 16px 0 16px
+        margin-top: 55px
+    .text
         font-size: 14px
-        line-height: 48px
         font-weight: 600
         text-transform: uppercase
         color: #444348
+        margin-top: 13px
+.krug
+    
