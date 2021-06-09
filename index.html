@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="font-family" href="fonts/Font Awesome 5 Brands-Regular-400.otf">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -188,39 +189,57 @@
             </div>
        </div>
        <div class="row">
-           <div class="col3">
-               <div class="title_block">Free</div>
-               <div class="price_block"></div>
+           <div class="col-3">
+               <div class="title_block">
+                   <div class="text">Free</div>
+               </div>
+               <div class="price_block">
+                    <div class="text"><h2> <sup>$</sup>0 </h2> /per month</div> 
+            </div>
                <div class="order_block">
-                <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+                <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
                    <form action="#">
                        <button class="order">order now</button>
                     </form>
                </div>
            </div>
-           <div class="col3">
-               <div class="title_block">Personal</div>
-               <div class="price_block"></div>
+           <div class="col-3">
+               <div class="title_block">
+                   <div class="text">Personal</div>
+                </div>
+               <div class="price_block">
+                   <div class="text"><h2> <sup>$</sup>25 </h2> /per month</div>
+                </div> 
                <div class="order_block">
-                <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+                <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
                 <form action="#">
                     <button class="order">order now</button>
-                 </form></div>
+                 </form>
+                </div>
            </div>
-           <div class="col3">
-               <div class="title_block">Business</div>
-               <div class="price_block"></div>
+           <div class="col-3">
+               <div class="title_block">
+                   <div class="text">Business</div>
+                </div>
+               <div class="price_block">
+                   <div class="text"><h2> <sup>$</sup>50 </h2> /per month</div> 
+                </div>
                <div class="order_block">
-                <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+                <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
                 <form action="#">
                     <button class="order">order now</button>
-                 </form></div>
+                 </form>
+                </div>
            </div>
-           <div class="col3">
-               <div class="title_block">Ultimate</div>
-               <div class="price_block"></div>
+           <div class="col-3">
+               <div class="title_block">
+                   <div class="text">Ultimate</div>
+                </div>
+               <div class="price_block">
+                   <div class="text"><h2> <sup>$</sup>99 </h2> /per month</div>
+                </div>
                <div class="order_block">
-                   <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.</div>
+                   <div class="text">Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.</div>
                 <form action="#">
                     <button class="order">order now</button>
                  </form></div>
@@ -244,22 +263,25 @@
             <div class="col-4">
                 <img src="icons/phone_icon.png" alt="phone">
                 <div class="text">
-                    Phone: (415) 124-5678 <br>
-                    Fax: (412) 123-8290
+                    <a href="tel:4151245678" class="subheader_phone">Phone: (415) 124-5678</a><br>
+                    <a href="tel:4121238290" class="subheader_phone">Fax: (412) 123-8290</a>
                 </div>
             </div>
             <div class="col-4">
                 <img src="icons/pointer_icon.png" alt="pointer">
                 <div class="text">
+                    <a href="https://goo.gl/maps/mwCcaoKcfiE3LquE6">
                     1001 Brickell Bay Dr. <br>
                     Suite 1900 <br>
-                    Miami, FL 33131
+                    Miami, FL 33131</a>
+                    
                 </div>
             </div>
             <div class="col-4">
                 <img src="icons/mail_icon.png" alt="mail">
                 <div class="text">
-                    support@yourname.com
+                    <a href = "mailto: support@yourname.com">support@yourname.com</a>
+                    
                 </div>
             </div>
         </div>
@@ -284,15 +306,31 @@
    </section>
 
    <section class="map"></section>
+
    <footer>
     <div class="row justify-content-center">
         <div class="col-auto">
             <div class="links">
-                <a href="#"><img src="icons/behance_icon2.png" alt="behance"></a>
-                <a href="#"><img src="icons/dribbble_icon.png" alt=""></a>
-                <a href="#"><img src="icons/twitter_icon.png" alt=""></a>
-                <a href="#"><img src="icons/facebook_icon.png" alt=""></a>
-                <a href="#"><img src="icons/linkedin_icon.png" alt=""></a>
+                <a href="#">
+                    <i class="fab fa-behance"></i>
+                    <!-- <img src="icons/behance_icon2.png" alt="behance"> -->
+                </a>
+                <a href="#">
+                    <i class="fab fa-dribbble"></i>
+                    <!-- <img src="icons/dribbble_icon.png" alt=""> -->
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                    <!-- <img src="icons/twitter_icon.png" alt=""> -->
+                </a>
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                    <!-- <img src="icons/facebook_icon.png" alt=""> -->
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                    <!-- <img src="icons/linkedin_icon.png" alt=""> -->
+                </a>
             </div>
             <div class="text">
                 copyright © 2014 lucid onepage theme
@@ -301,5 +339,6 @@
         </div>
         </div>
    </footer>
+   <script src="https://kit.fontawesome.com/b637aaa691.js" crossorigin="anonymous"></script>
 </body>
 </html>

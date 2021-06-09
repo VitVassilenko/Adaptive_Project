@@ -21,7 +21,7 @@
         width: 160px
         height: 50px
         background-color: #008ed6
-        box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1); 
+        box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)  
 
 header
     display: flex
@@ -94,7 +94,9 @@ nav
         letter-spacing: normal 
         color: #999999 
     img
+        position: relative
         max-width: 100%
+        z-index: 1
     &_buttons
         margin-top: 63px
         display: flex
@@ -117,9 +119,12 @@ nav
     
 
 .features
+    position: relative
     height: 575px
     background-color: white
-    border-bottom: 1px solid gray 
+    border-bottom: 1px solid #837d7da2
+    z-index: 2
+
     .col-auto
         h2
             text-align: center
@@ -204,7 +209,7 @@ nav
         letter-spacing: normal
         color: #1b1b1b
         .li1
-            list-style-image: url('../icons/cup_icon.png')
+            list-style-image: url('../icons/cup_icon.png')      
         .li2
             list-style-image: url('../icons/mouse_icon.png')
         .li3
@@ -287,6 +292,7 @@ nav
 
 
 .plans
+    text-align: center
     height: 780px
     .col-auto
         h2
@@ -305,6 +311,108 @@ nav
                 width: 19px
                 height: 2px
                 background-color: #008ed6
+    .title_block
+        display: inline-block
+        margin-top: 70px
+        width: 272px
+        height: 72px
+        background-color: #ffffff
+        border: 1px solid #e0e0e0
+        font-family: 'Source Sans Pro' 
+        font-size: 24px 
+        line-height: 20px 
+        font-weight: 700 
+        text-transform: uppercase
+        color: #1a1a1a
+        .text
+            margin-top: 30px
+
+    .price_block
+        width: 272px 
+        height: 152px 
+        background-color: #ffffff 
+        border: 1px solid #e0e0e0 
+        font-size: 18px 
+        line-height: 28px 
+        font-weight: 400 
+        color: #999999 
+        .text
+            margin-top: 42px
+            h2
+                font-family: 'Source Sans Pro'
+                font-size: 60px
+                line-height: 20px
+                font-weight: 600
+                color: #1a1a1a 
+                sup
+                    font-family: 'Source Sans Pro'
+                    font-size: 35px
+                    line-height: 20px
+                    font-weight: 600
+                    color: #1a1a1a
+
+    .order_block
+        width: 272px 
+        height: 272px 
+        background-color: #ffffff 
+        border: 1px solid #e0e0e0 
+        font-family: 'Source Sans Pro' 
+        font-size: 18px 
+        line-height: 26px 
+        font-weight: 400 
+        color: #999999 
+        vertical-align: middle
+        .text
+            margin-top: 50px
+            span
+                color: #008ed6 
+
+    .order
+        margin-top: 43px
+        width: 162px 
+        height: 52px 
+        background-color: #ffffff 
+        border: 1px solid #e0e0e0 
+        font-family: 'Source Sans Pro' 
+        font-size: 14px 
+        line-height: 48px 
+        font-weight: 700 
+        text-transform: uppercase 
+        color: #008ed6
+        border-radius: 4px
+.col-3:hover
+    .title_block
+        font-family: 'Source Sans Pro'
+        font-size: 24px
+        line-height: 20px
+        font-weight: 700
+        text-transform: uppercase
+        color: #008ed6
+        transition-delay: 0.1s
+    .price_block
+        width: 272px
+        height: 152px
+        background-color: #008ed6
+        color: #fafafa
+        border: 1px solid #008ed6
+        transition-delay: 0.1s
+        h2
+            color: #fafafa
+            transition-delay: 0.1s
+            sup
+                color: #fafafa
+                transition-delay: 0.1s
+    .order
+        width: 160px
+        height: 50px
+        background-color: #008ed6
+        box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)
+        color: #ffffff
+        transition-delay: 0.1s
+
+
+
+
 
 .contacts
     height: 722px
@@ -332,10 +440,10 @@ nav
         flex-direction: column
         align-items: center     
         img  
-        margin-left: auto
-        margin-right: auto
+            margin-left: auto
+            margin-right: auto
 
-    .text
+    .text  
         margin-top: 32px
         text-align: center
         font-family: 'Source Sans Pro'
@@ -343,16 +451,23 @@ nav
         line-height: 26px
         font-weight: 400
         color: #999999
-        
+        a:link
+            text-decoration: none
+            color: #999999
+        a:hover
+            text-decoration: underline
+            color: #999999
+
     .forms
         display: flex
         margin: 0 auto
         margin-top: 70px
-        max-width: 770px
+        width: 770px
         height: 360px
         background-color: #15141a
     .data
-        margin-top: 30px
+        margin-top: 60px
+        margin-left: 60px
         input
             margin-bottom: 20px
             width: 300px
@@ -360,15 +475,17 @@ nav
             background-color: rgba(0,142,214,0.0)
             border: 1px solid rgba(255,255,255,0.2)
     .message
-        margin-top: 30px
+        margin-top: 60px
+        margin-right: 85px
         textarea
-            margin: 0
             width: 300px
             height: 190px
             background-color: rgba(0,142,214,0.0)
             border: 1px solid rgba(255,255,255,0.2)
         button
-            margin-right: 20px
+            align-items: flex-end
+            margin-left: 140px
+            margin-top: 20px
             width: 160px
             height: 50px
             background-color: rgba(0,142,214,0.0)
@@ -389,16 +506,25 @@ nav
 
 
 .map
+    position: relative
     height: 360px
     background-color: #15141a
     background: url('../img/map.jpg') center (center / cover) no-repeat
+    z-index: -1
 
 footer 
     height: 160px
     background-color: #15141a
-    img
-        margin: 0 16px 0 16px
-        margin-top: 55px
+    .links
+        a:link
+            text-decoration: none
+        i
+            margin: 0 16px 0 16px
+            margin-top: 55px
+            color: #ffffff
+            font-size: 23px
+        i:hover
+            color: #008ed6
     .text
         font-size: 14px
         font-weight: 600
