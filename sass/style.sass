@@ -1,4 +1,5 @@
 
+@import "media"
 
 @mixin little_title
 	font-family: 'Source Sans Pro' 
@@ -24,11 +25,13 @@
 		height: 50px
 		background-color: #008ed6
 		box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)  
+
 html
 	width: 100%
 
 header
 	nav
+		position: fixed
 		display: flex
 		flex-direction: row
 		justify-content: space-between
@@ -90,6 +93,9 @@ header
 			&_item
 				margin-left: 22px
 				padding: 0
+
+	.hamburger
+		display: none
 
 
 .home
@@ -170,7 +176,7 @@ header
 				height: 2px
 				background-color: #008ed6  
 	.row
-		.col-3
+		.col-md-3
 			.round
 				display: flex
 				justify-content: center
@@ -317,13 +323,13 @@ header
 			max-width: 100%
 		&_name
 			font-family: 'Source Sans Pro'
-			font-size: 14px
-			line-height: 26px
+			font-size: 18px
+			line-height: 10px
 			font-weight: 700
 			color: #ffffff	
 			h2
-				font-size: 16px
-				line-height: 42px
+				font-size: 15px
+				line-height: 15px
 				font-weight: 400
 	.checkbox
 		margin-top: 135px
@@ -467,7 +473,7 @@ header
 		text-transform: uppercase 
 		color: #008ed6
 		border-radius: 4px
-.col-3:hover
+.col-md-3:hover
 	.title_block
 		font-family: 'Source Sans Pro'
 		font-size: 24px
@@ -477,8 +483,6 @@ header
 		color: #008ed6
 		transition-delay: 0.1s
 	.price_block
-		width: 272px
-		height: 152px
 		background-color: #008ed6
 		color: #fafafa
 		border: 1px solid #008ed6
@@ -490,14 +494,10 @@ header
 				color: #fafafa
 				transition-delay: 0.1s
 	.order
-		width: 160px
-		height: 50px
 		background-color: #008ed6
 		box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)
 		color: #ffffff
 		transition-delay: 0.1s
-
-
 
 
 
@@ -521,7 +521,7 @@ header
 				width: 19px
 				height: 2px
 				background-color: #008ed6
-	.col-4
+	.col-md-4
 		margin-top: 60px
 		display: flex
 		flex-direction: column
@@ -549,7 +549,7 @@ header
 		display: flex
 		margin: 0 auto
 		margin-top: 70px
-		width: 770px
+		max-width: 770px
 		height: 360px
 		background-color: #15141a
 	.data
@@ -592,10 +592,6 @@ header
 			text-transform: uppercase
 			color: #ffffff
 			+btn_hover
-		
-			
-			
-			
 
 
 .map
@@ -624,4 +620,4 @@ footer
 		text-transform: uppercase
 		color: #444348
 		margin-top: 13px
-	
+
