@@ -1,0 +1,612 @@
+
+
+
+=btn_hover
+	&:hover
+		width: 160px
+		height: 50px
+		background-color: #008ed6
+		box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)  
+
+html
+	width: 100%
+
+header
+	width: 100%
+	nav
+		height: 50px
+		width: 100%
+		z-index: 6
+		background-color: #36363656
+		position: fixed
+		.container	
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-start
+			.brand
+				display: flex
+				flex-direction: row
+				align-items: center
+				h2 
+					font-family: Quicksand
+					font-size: 24px
+					line-height: 58px
+					font-weight: 700
+					text-transform: uppercase
+					color: #ffffff
+				span
+					margin-left: 7px
+					margin-bottom: 5px
+					opacity: 0.3
+					font-family: 'Source Sans Pro'
+					font-size: 9px
+					line-height: 10px
+					font-weight: 400
+					text-transform: uppercase
+					letter-spacing: 0.14em
+					color: #ffffff
+			.menu
+				display: flex
+				justify-content: space-between
+				padding: 13px 70px
+				list-style-type: none
+
+				&_link
+					font-family: 'Source Sans Pro'
+					font-size: 16px
+					font-weight: 600
+					color: #fffefe
+				a:link
+					text-decoration: none
+					.line
+						position: relative
+						margin-top: 9px
+						z-index: -1
+				a:hover
+					transition-delay: 0.3s
+					.line
+						position: relative
+						margin: 0 auto
+						margin-top: 9px
+						width: 100%
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						z-index: 1
+						.line_part
+							width: 47%
+							height: 2px
+							background-color: #008ed6 
+				&_item
+					margin-left: 22px
+					padding: 0
+
+	.hamburger
+		display: none
+
+
+.home
+	height: 680px
+	background-color: #15141a
+	background-image: linear-gradient(135.0deg, rgba(21,20,26,0.4) 19%, rgba(21,20,26,0.0) 80%)
+	background: url('../img/home_bg.jpg') center (center / cover) no-repeat
+	h1
+		font-family: 'Source Sans Pro' 
+		font-size: 14px 
+		line-height: 48px 
+		font-weight: 700 
+		text-transform: uppercase 
+		letter-spacing: 0.1em 
+		color: #008ed6 
+		margin-top: 70px
+	h2
+		font-size: 48px 
+		line-height: 65px 
+		font-weight: 600 
+		text-transform: none 
+		letter-spacing: normal 
+		color: #ffffff 
+	.text
+		font-size: 18px 
+		line-height: 26px 
+		font-weight: 400 
+		text-transform: none 
+		letter-spacing: normal 
+		color: #999999 
+	img
+		margin-top: 80px
+		position: relative
+		max-width: 100%
+		// z-index: 1
+	&_buttons
+		margin-top: 63px
+		display: flex
+		flex-direction: row
+		button
+			margin-right: 20px
+			width: 160px
+			height: 50px
+			background-color: rgba(0,142,214,0.0)
+			border: 1px solid rgba(255,255,255,0.2)
+			border-radius: 4px
+			box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2)
+			font-family: 'Source Sans Pro'
+			font-size: 14px
+			line-height: 48px
+			font-weight: 700
+			text-transform: uppercase
+			color: #ffffff
+			+btn_hover
+	
+
+.features
+	position: relative
+	height: 575px
+	background-color: white
+	border-bottom: 1px solid #837d7da2
+	z-index: 2
+
+	.col-auto
+		h2
+			text-align: center
+			@include little_title
+		h3
+			text-align: center
+			@include big_title
+		.line
+			margin: 30px auto
+			margin-bottom: 0
+			width: 42px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.line_part
+				width: 19px
+				height: 2px
+				background-color: #008ed6  
+	.row
+		.col-md-3
+			.round
+				display: flex
+				justify-content: center
+				align-items: center
+				margin: 0 auto
+				margin-top: 70px
+				width: 90px
+				height: 90px
+				background-color: #ffffff
+				border: 1px solid #e0e0e0
+				border-radius: 100%     
+			.text
+				margin: 0 auto
+				margin-top: 34px
+				font-size: 18px 
+				line-height: 26px 
+				color: #999999
+				text-align: center
+			h2
+				margin-bottom: 25px
+				font-family: 'Source Sans Pro'
+				font-size: 24px
+				line-height: 20px
+				font-weight: 400
+				color: #1a1a1a 
+
+.about_long
+	height: 705px
+	img
+		margin-top: 60px
+		max-width: 100%
+	h2
+		margin-top: 120px
+		@include little_title
+		text-align: left
+	h3
+		@include big_title
+		text-align: left
+	.line
+		margin: 30px 0
+		width: 42px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		.line_part
+			width: 19px
+			height: 2px
+			background-color: #008ed6
+	.text
+		font-size: 18px
+		line-height: 26px
+		font-weight: 400
+		text-transform: none
+		letter-spacing: normal
+		color: #999999
+	ul
+		margin-top: 45px
+		font-size: 18px
+		line-height: 36px
+		font-weight: 400
+		text-transform: none
+		letter-spacing: normal
+		color: #1b1b1b
+		.li1
+			list-style-image: url('../icons/cup_icon.png')      
+		.li2
+			list-style-image: url('../icons/mouse_icon.png')
+		.li3
+			list-style-image: url('../icons/lightning_icon.png')
+		.li4
+			list-style-image: url('../icons/speedometer_icon.png')
+
+.about_short
+	height: 543px
+	background-color: #f2f2f2 
+	h2
+		margin-top: 132px
+		@include little_title
+		text-align: left
+	h3
+		@include big_title
+		text-align: left
+	.line
+		margin: 30px 0
+		width: 42px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		.line_part
+			width: 19px
+			height: 2px
+			background-color: #008ed6
+	.text
+		font-size: 18px
+		line-height: 26px
+		font-weight: 400
+		text-transform: none
+		letter-spacing: normal
+		color: #999999
+	img
+		max-width: 100%
+
+.feedback
+	height: 640px
+	background: url('../img/recalls_bg.jpg') center (center / cover) no-repeat
+	.col-auto
+		h2
+			text-align: center
+			@include little_title
+		h3
+			text-align: center
+			font-size: 36px
+			font-weight: 600
+			text-transform: none
+			letter-spacing: normal
+			color: #ffffff
+		.line
+			margin: 30px auto
+			margin-bottom: 0
+			width: 42px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.line_part
+				width: 19px
+				height: 2px
+				background-color: #008ed6
+	&_text
+		margin-top: 94px
+		font-family: 'Source Sans Pro'
+		text-transform: italic
+		font-size: 24px
+		line-height: 32px
+		font-weight: 400
+		color: #ffffff
+	&_user
+		margin-top: 26px
+		display: flex
+		flex-direction: row
+		align-items: center
+		img
+			margin-right: 24px
+			border-radius: 100%
+			max-width: 100%
+		&_name
+			font-family: 'Source Sans Pro'
+			font-size: 18px
+			line-height: 10px
+			font-weight: 700
+			color: #ffffff	
+			h2
+				font-size: 15px
+				line-height: 15px
+				font-weight: 400
+	.checkbox
+		margin-top: 135px
+		input
+			width: 8px
+			height: 8px
+			background-color: rgba(255,255,255,0.0)
+			border: 1px solid rgba(255,255,255,0.2)
+		input:checked
+			width: 14px
+			height: 14px
+			background-color: #ffffff
+			
+
+
+.eye-catcher    
+	height: 170px
+	background-color: #15141a
+	font-weight: 300
+	.container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		
+	.text
+		font-weight: 300
+		margin-top: 69px 
+		font-family: 'Source Sans Pro'
+		font-size: 36px
+		line-height: 48px
+		color: #ffffff
+		span
+			font-weight: 600
+	.buttons
+		margin-top: 60px
+		display: flex
+		flex-direction: row
+	button
+		margin-left: 20px
+		width: 160px
+		height: 50px
+		background-color: rgba(0,142,214,0.0)
+		border: 1px solid rgba(255,255,255,0.2)
+		border-radius: 4px
+		box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2)
+		font-family: 'Source Sans Pro'
+		font-size: 14px
+		line-height: 48px
+		font-weight: 700
+		text-transform: uppercase
+		color: #ffffff
+		+btn_hover
+			
+
+
+.plans
+	text-align: center
+	height: 780px
+	.col-auto
+		h2
+			text-align: center
+			@include little_title
+		h3
+			text-align: center
+			@include big_title
+		.line
+			margin: 30px auto
+			width: 42px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.line_part
+				width: 19px
+				height: 2px
+				background-color: #008ed6
+	.title_block
+		margin-top: 70px
+		width: 272px
+		height: 72px
+		background-color: #ffffff
+		border: 1px solid #e0e0e0
+		font-family: 'Source Sans Pro' 
+		font-size: 24px 
+		line-height: 20px 
+		font-weight: 700 
+		text-transform: uppercase
+		color: #1a1a1a
+		.text
+			margin-top: 30px
+
+	.price_block
+		width: 272px 
+		height: 152px 
+		background-color: #ffffff 
+		border: 1px solid #e0e0e0 
+		font-size: 18px 
+		line-height: 28px 
+		font-weight: 400 
+		color: #999999 
+		.text
+			margin-top: 42px
+			h2
+				font-family: 'Source Sans Pro'
+				font-size: 60px
+				line-height: 20px
+				font-weight: 600
+				color: #1a1a1a 
+				sup
+					font-family: 'Source Sans Pro'
+					font-size: 35px
+					line-height: 20px
+					font-weight: 600
+					color: #1a1a1a
+
+	.order_block
+		width: 272px 
+		height: 272px 
+		background-color: #ffffff 
+		border: 1px solid #e0e0e0 
+		font-family: 'Source Sans Pro' 
+		font-size: 18px 
+		line-height: 26px 
+		font-weight: 400 
+		color: #999999 
+		vertical-align: middle
+		.text
+			margin-top: 50px
+			span
+				color: #008ed6 
+
+	.order
+		margin-top: 43px
+		width: 162px 
+		height: 52px 
+		background-color: #ffffff 
+		border: 1px solid #e0e0e0 
+		font-family: 'Source Sans Pro' 
+		font-size: 14px 
+		line-height: 48px 
+		font-weight: 700 
+		text-transform: uppercase 
+		color: #008ed6
+		border-radius: 4px
+.col-md-3:hover
+	.title_block
+		font-family: 'Source Sans Pro'
+		font-size: 24px
+		line-height: 20px
+		font-weight: 700
+		text-transform: uppercase
+		color: #008ed6
+		transition-delay: 0.1s
+	.price_block
+		background-color: #008ed6
+		color: #fafafa
+		border: 1px solid #008ed6
+		transition-delay: 0.1s
+		h2
+			color: #fafafa
+			transition-delay: 0.1s
+			sup
+				color: #fafafa
+				transition-delay: 0.1s
+	.order
+		background-color: #008ed6
+		box-shadow: 0px 0px 3px 0px rgba(3,3,3,0.1)
+		color: #ffffff
+		transition-delay: 0.1s
+
+
+
+.contacts
+	height: 722px
+	background-color: #e6e3e3
+	.col-auto
+		h2
+			text-align: center
+			@include little_title
+		h3
+			text-align: center
+			@include big_title
+		.line
+			margin: 30px auto
+			width: 42px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			.line_part
+				width: 19px
+				height: 2px
+				background-color: #008ed6
+	.col-md-4
+		margin-top: 60px
+		display: flex
+		flex-direction: column
+		align-items: center     
+		img  
+			margin-left: auto
+			margin-right: auto
+
+	.text  
+		margin-top: 32px
+		text-align: center
+		font-family: 'Source Sans Pro'
+		font-size: 18px
+		line-height: 26px
+		font-weight: 400
+		color: #999999
+		a:link
+			text-decoration: none
+			color: #999999
+		a:hover
+			text-decoration: underline
+			color: #999999
+
+	.forms
+		display: flex
+		margin: 0 auto
+		margin-top: 70px
+		max-width: 770px
+		height: 360px
+		background-color: #15141a
+	.data
+		margin-top: 60px
+		margin-left: 60px
+		input
+			margin-bottom: 20px
+			width: 300px
+			height: 50px
+			background-color: rgba(0,142,214,0.0)
+			border: 1px solid rgba(255,255,255,0.2)
+		input:focus
+			color: #ffffff
+	.message
+		margin-top: 60px
+		margin-right: 85px
+		textarea
+			width: 300px
+			height: 190px
+			background-color: rgba(0,142,214,0.0)
+			border: 1px solid rgba(255,255,255,0.2)
+		textarea:focus
+			color: #ffffff
+		textarea:after
+			color: #ffffff
+		button
+			align-items: flex-end
+			margin-left: 140px
+			margin-top: 20px
+			width: 160px
+			height: 50px
+			background-color: rgba(0,142,214,0.0)
+			border: 1px solid rgba(255,255,255,0.2)
+			border-radius: 4px
+			box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2)
+			font-family: 'Source Sans Pro'
+			font-size: 14px
+			line-height: 48px
+			font-weight: 700
+			text-transform: uppercase
+			color: #ffffff
+			+btn_hover
+
+
+.map
+	position: relative
+	height: 360px
+	background-color: #15141a
+	background: url('../img/map.jpg') center (center / cover) no-repeat
+	z-index: -1
+
+footer 
+	height: 160px
+	background-color: #15141a
+	.links
+		a:link
+			text-decoration: none
+		i
+			margin: 0 16px 0 16px
+			margin-top: 55px
+			color: #444348
+			font-size: 23px
+		i:hover
+			color: #008ed6
+	.text
+		font-size: 14px
+		font-weight: 600
+		text-transform: uppercase
+		color: #444348
+		margin-top: 13px
